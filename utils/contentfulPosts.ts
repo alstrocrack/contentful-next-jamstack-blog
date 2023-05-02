@@ -1,5 +1,5 @@
 import * as contentful from "contentful";
-import { contentfulPost } from "../models/contentfulContent";
+import { contentfulPost } from "../types/contentfulContent";
 
 const spaceID = process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID;
 const accessToken = process.env.NEXT_PUBLIC_CONTENT_DELIVERY_API_KEY;
