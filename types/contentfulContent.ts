@@ -1,18 +1,18 @@
 import * as contentful from "contentful";
 
-export type contentfulPost = contentful.Entry<contentful.EntrySkeletonType, undefined, string>;
+export type ContentfulPost = contentful.Entry<contentful.EntrySkeletonType, undefined, string>;
 
-export type contentfulData = {
+export interface ContentfulData {
   date: string;
-  image: contentImage;
+  image: ContentImage;
   title: string;
-};
+}
 
-export type contentImage = {
+export interface ContentImage {
   fields: {
     file: {
       url: string;
       description: string;
     };
   };
-};
+}

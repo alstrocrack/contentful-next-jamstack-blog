@@ -4,13 +4,13 @@ import Footer from "../components/Footer";
 import styles from "../styles/Home.module.scss";
 import fetchEntries from "../utils/contentfulPosts";
 import Post from "../components/Post";
-import { contentfulData } from "../types/contentfulContent";
+import { ContentfulData } from "../types/contentfulContent";
 
-interface contentfulProps {
-  posts: contentfulData[];
+interface ContentfulProps {
+  posts: ContentfulData[];
 }
 
-const Home: React.FC<contentfulProps> = ({ posts }) => {
+const Home: React.FC<ContentfulProps> = ({ posts }) => {
   return (
     <>
       <Header />

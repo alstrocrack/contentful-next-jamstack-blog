@@ -1,5 +1,5 @@
 import * as contentful from "contentful";
-import { contentfulPost } from "../types/contentfulContent";
+import { ContentfulPost } from "../types/contentfulContent";
 
 const spaceID = process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID;
 const accessToken = process.env.NEXT_PUBLIC_CONTENT_DELIVERY_API_KEY;
@@ -15,7 +15,7 @@ const client = contentful.createClient({
 
 const fetchEntries = async () => {
   const entries = await client.getEntries();
-  let contents: contentfulPost[] | [] = [];
+  let contents: ContentfulPost[] | [] = [];
   if (entries.items) contents = [...entries.items];
   return contents;
 };
