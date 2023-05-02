@@ -1,0 +1,15 @@
+$theme-color-pink: #e72076;
+$theme-color-black: #000305;
+$theme-font: Arial, Helvetica, sans-serif;
+
+@mixin pink_on_black {
+  background-color: $theme-color-black;
+  color: $theme-color-pink;
+  font-family: $theme-font;
+}
+
+@mixin black_on_pink {
+  background-color: $theme-color-pink;
+  color: $theme-color-black;
+  font-family: $theme-font;
+}

@@ -1,0 +1,8 @@
+@use "config";
+
+.footer {
+  @include config.black_on_pink;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
