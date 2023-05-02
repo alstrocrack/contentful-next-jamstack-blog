@@ -1,8 +1,8 @@
 import React from "react";
-import { contentImage } from "../types/contentfulContent";
+import { ContentImage } from "../types/contentfulContent";
 import styles from "../styles/Post.module.scss";
 
-const Post: React.FC<{ date: string; image: contentImage; title: string }> = ({ date, image, title }) => {
+const Post: React.FC<{ date: string; image: ContentImage; title: string }> = ({ date, image, title }) => {
   const { url, description } = image.fields.file;
   return (
     <div className={styles.post}>
