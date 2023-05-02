@@ -9,10 +9,10 @@ const Post: React.FC<{ date: string; image: contentImage; title: string }> = ({ 
       <div className={styles.image}>
         <img alt={description} src={`https:${url}`} />
       </div>
-      <div className="description">{description}</div>
-      <div className="text">
+      <div className={styles.description}>{description}</div>
+      <div className={styles.text}>
         <h2>{title}</h2>
-        <h3>{date.substring(0, 10)}</h3>
+        <h3 className={styles.date}>{date.substring(0, 10)}</h3>
       </div>
     </div>
   );
